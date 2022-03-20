@@ -1,0 +1,40 @@
+
+.messBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px #999;
+    align-self: start;
+    max-width: 50%;
+}
+
+.messMe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px #333;
+    background-color: rgb(19, 111, 165);
+    color: aliceblue;
+    flex-direction: row-reverse;
+    max-width: 50%;
+    align-self: end;
+}
+
+.wrapMess {
+    background-color: rgb(227, 243, 243);
+    box-shadow: 0 0 6px #999;
+    min-width: 60%;
+    height: 80vh;
+    border-radius: 10px;
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
