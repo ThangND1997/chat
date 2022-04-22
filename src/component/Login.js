@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import firebase from '../firebase/config';
 import { auth } from '../firebase/config';
 
-
 function Login () {
 
     const handleLoginWithGoogle = () => {
@@ -16,9 +15,9 @@ function Login () {
     }
 
     return(
-        <div style={{margin: 'auto'}}>
-            <Button variant="outlined" onClick={handleLoginWithGoogle}>Login with Google</Button>
-            <Button variant="outlined" onClick={handleLoginWithFaceBook}>Login with FaceBook</Button>
+        <div style={{margin: 'auto', display: 'flex', flexDirection: 'column'}}>
+            <Button variant="contained" color="error" onClick={handleLoginWithGoogle} style={{marginBottom: '16px'}}>Login with Google</Button>
+            <Button variant="contained" color="primary" onClick={handleLoginWithFaceBook}>Login with FaceBook</Button>
         </div>
     )
 }
